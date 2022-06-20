@@ -50,12 +50,15 @@ setInterval(() => {
 	//zum Testen (in Production entfernen)
 	 if (updateTimer <= 50 && updateTimer > 40) {
 		overlay.style.display = "flex";
-		overlay.style.opacity = 1;
-	} else {
-		overlay.style.display = "none";
-		overlay.style.opacity = 0;
 		overlay.style.width='200%';
 		overlay.style.height='200%';
+		overlay.style.opacity = 1;
+		overlay.style.position='center';
+	} else {
+		
+		overlay.style.display = "none";
+		overlay.style.opacity = 0;
+		
 	} 
 
 }, 1000);

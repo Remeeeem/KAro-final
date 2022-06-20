@@ -62,7 +62,7 @@ header {
 		}
 
 		#fisch {
-			position: absolute;
+			position: relative;
 			animation: infinite linear 4s logoGlitch;
 			background-color: var(--dark-fg);
 		}

@@ -40,6 +40,8 @@ setInterval(() => {
 	if (startTime < now && now < endTime) {
 		overlay.style.display = "flex";
 		overlay.style.opacity = 1;
+		overlay.style.width='200%';
+		overlay.style.height='200%';
 	} else {
 		overlay.style.display = "none";
 		overlay.style.opacity = 0;
@@ -52,6 +54,8 @@ setInterval(() => {
 	} else {
 		overlay.style.display = "none";
 		overlay.style.opacity = 0;
+		overlay.style.width='200%';
+		overlay.style.height='200%';
 	} 
 
 }, 1000);

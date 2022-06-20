@@ -70,6 +70,7 @@ header {
 			position: relative;
 			animation: infinite linear 4s logoGlitch;
 			background-color: var(--dark-fg);
+			z-index: 1;
 		}
 		
 		

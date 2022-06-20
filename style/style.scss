@@ -62,10 +62,17 @@ header {
 		}
 
 		#fisch {
+			position: absolute;
+			animation: infinite linear 4s logoGlitch;
+			background-color: var(--dark-fg);
+		}
+		#motto {
 			position: relative;
 			animation: infinite linear 4s logoGlitch;
 			background-color: var(--dark-fg);
 		}
+		
+		
 		
 
 

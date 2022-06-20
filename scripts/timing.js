@@ -1,7 +1,7 @@
 //?Zeiten für Fisch Overlay
 let updateTimer = 60;		//Sekunden, nach denen die Seite neu geladen werden soll
-const startTime = new Date("2022-06-20T11:38:00+02:00");
-const endTime = new Date("2022-06-20T11:39:10+02:00");
+const startTime = new Date("2022-06-20T12:20:00+02:00");
+const endTime = new Date("2022-06-20T12:23:10+02:00");
 
 
 const time = document.getElementById("update");

@@ -98,16 +98,17 @@ main {
 
 	section {
 		width: 100%;
+		overflow-y: auto;
+		max-height: calc(100vh - 64px - 32px - 110px);
 
 	}
 
-	tbody::-webkit-scrollbar {
+	section::-webkit-scrollbar {
 		display: none;
 	}
 
 	table.fixed_header {
 
-		table-layout: fixed;
 		border-collapse: collapse;
 		text-align: left;
 		width: 100%;
@@ -123,17 +124,20 @@ main {
 		thead {
 			background: var(--wasabi);
 			color: #fff;
+
+			th {
+				position: sticky;
+				top: 0;
+				background: var(--wasabi);
+
+			}
 		}
 
-		thead tr {
-			display: block;
-		}
+
 
 		tbody {
-			display: block;
 			width: 100%;
-			overflow: auto;
-			max-height: calc(100vh - 64px - 32px - 110px);
+
 
 			tr:nth-child(even) {
 				background-color: var(--dark-fg);
@@ -148,6 +152,7 @@ main {
 			padding-left: 0.5rem;
 			padding-right: 1rem;
 			vertical-align: top;
+			border: 2px solid red;
 
 			&.klasse {
 				background-color: var(--wasabi);

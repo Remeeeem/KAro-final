@@ -1,6 +1,6 @@
 //?Zeiten für Fisch Overlay
 let updateTimer = 60;		//Sekunden, nach denen die Seite neu geladen werden soll
-const startTime = new Date("2022-06-20T11:37:00+02:00");
+const startTime = new Date("2022-06-20T11:38:00+02:00");
 const endTime = new Date("2022-06-20T11:39:10+02:00");
 
 
@@ -37,21 +37,21 @@ const overlay = document.getElementById("lag");
 setInterval(() => {
 	now.setSeconds(now.getSeconds() + 1);
 
-	/* if (startTime < now && now < endTime) {
-		overlay.style.display = "flex";
-		overlay.style.opacity = 1;
-	} else {
-		overlay.style.display = "none";
-		overlay.style.opacity = 0;
-	} */
-
-	//zum Testen (in Production entfernen)
-	if (updateTimer <= 50 && updateTimer > 40) {
+	if (startTime < now && now < endTime) {
 		overlay.style.display = "flex";
 		overlay.style.opacity = 1;
 	} else {
 		overlay.style.display = "none";
 		overlay.style.opacity = 0;
 	}
+
+	//zum Testen (in Production entfernen)
+	/* if (updateTimer <= 50 && updateTimer > 40) {
+		overlay.style.display = "flex";
+		overlay.style.opacity = 1;
+	} else {
+		overlay.style.display = "none";
+		overlay.style.opacity = 0;
+	} */
 
 }, 1000);

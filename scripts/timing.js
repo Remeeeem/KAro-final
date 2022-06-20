@@ -33,7 +33,7 @@ setInterval(() => {
 
 
 //Fisch Overlay
-const overlay = document.getElementById("phase 1");
+const overlay = document.getElementById("lag");
 setInterval(() => {
 	now.setSeconds(now.getSeconds() + 1);
 
@@ -54,32 +54,6 @@ setInterval(() => {
 		
 		overlay.style.display = "none";
 		overlay.style.opacity = 0;
-		
-	} 
-
-}, 1000);
-
-const overlay2 = document.getElementById("phase 2");
-setInterval(() => {
-	now.setSeconds(now.getSeconds() + 1);
-
-	if (startTime < now && now < endTime) {
-		overlay2.style.display = "flex";
-		overlay2.style.opacity = 1;
-		
-	} else {
-		overlay2.style.display = "none";
-		overlay2.style.opacity = 0;
-	}
-
-	//zum Testen (in Production entfernen)
-	 if (updateTimer <= 38 && updateTimer > 20) {
-		overlay2.style.display = "flex";
-		overlay2.style.opacity = 1;	
-	} else {
-		
-		overlay2.style.display = "none";
-		overlay2.style.opacity = 0;
 		
 	} 
 

@@ -65,12 +65,13 @@ header {
 			position: absolute;
 			animation: infinite linear 4s logoGlitch;
 			background-color: var(--dark-fg);
+			z-index: 9;
 		}
 		#motto {
 			position: relative;
-			animation: infinite linear 4s logoGlitch;
+			animation: infinite linear 4s logoGlitch1;
 			background-color: var(--dark-fg);
-			z-index: 1;
+			z-index: 10;
 		}
 		
 		
@@ -81,6 +82,21 @@ header {
 }
 
 @keyframes logoGlitch {
+	0% {
+		opacity: 0;
+	}
+
+	97% {
+		opacity: 0;
+	}
+
+	98% {
+		opacity: 1;
+	}
+
+
+}
+@keyframes logoGlitch1 {
 	0% {
 		opacity: 0;
 	}

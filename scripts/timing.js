@@ -45,13 +45,13 @@ setInterval(() => {
 		overlay.style.opacity = 0;
 	}
 
-	/* //zum Testen (in Production entfernen)
+	//zum Testen (in Production entfernen)
 	if (updateTimer <= 50 && updateTimer > 40) {
 		overlay.style.display = "flex";
 		overlay.style.opacity = 1;
 	} else {
 		overlay.style.display = "none";
 		overlay.style.opacity = 0;
-	} */
+	}
 
 }, 1000);
